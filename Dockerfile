@@ -3,7 +3,6 @@ FROM python:3.10
 WORKDIR /app
 COPY . .
 
-# Install only minimal dependencies (safe build)
-RUN pip install --no-cache-dir numpy
+RUN pip install --no-cache-dir numpy fastapi uvicorn
 
-CMD ["python", "main.py"]
+CMD ["uvicorn", "inference:app", "--host", "0.0.0.0", "--port", "7860"]
