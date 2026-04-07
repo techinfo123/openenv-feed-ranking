@@ -1,0 +1,20 @@
+name: value-aware-feed-ranking
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+observation_space:
+  type: UserState
+
+action_space:
+  type: ranked_posts
+
+reward:
+  components:
+    - engagement
+    - value_alignment
+    - diversity
+    - toxicity_penalty
+    - fatigue_penalty

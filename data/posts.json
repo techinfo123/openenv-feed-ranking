@@ -1,0 +1,7 @@
+[
+  {"id": 1, "caring": 0.8, "toxicity": 0.1},
+  {"id": 2, "caring": 0.3, "toxicity": 0.6},
+  {"id": 3, "caring": 0.7, "toxicity": 0.2},
+  {"id": 4, "caring": 0.5, "toxicity": 0.3},
+  {"id": 5, "caring": 0.9, "toxicity": 0.05}
+]
